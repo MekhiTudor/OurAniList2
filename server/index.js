@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const pathToDist = path.join(__dirname, "../OurAniList2/AniList/dist");
+const pathToDist = path.join(__dirname, "../AniList/dist");
 const serveStatic = express.static(pathToDist);
 
 app.use(serveStatic);
