@@ -6,5 +6,5 @@ const serveStatic = express.static(pathToDist);
 
 app.use(serveStatic);
 
-const port = 9999;
+const port = 1234;
 app.listen(port, () => console.log(`listening at http://localhost:${port}`));
