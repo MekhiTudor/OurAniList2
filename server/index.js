@@ -5,5 +5,7 @@ const pathToDist = path.join(__dirname, "../AniList/dist");
 const serveStatic = express.static(pathToDist);
 
 app.use(serveStatic);
+
+app.get("/", () => console.log("I WORK!"));
 const port = 9999;
 app.listen(port, () => console.log(`listening at http://localhost:${port}`));
